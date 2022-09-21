@@ -71,6 +71,7 @@ a{
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: bold;
+    
 }
 .link-arrow::after{
     content: '-->';
@@ -518,7 +519,7 @@ a{
    max-height: 0;
    overflow: hidden;
    opacity: 0;
-   transition: all 0.5s;
+   transition: all 0.5s;    
 }
 .collapsible--expanded .collapsible__chevron{
     transform: rotate(0);
@@ -685,8 +686,12 @@ a{
 
 .feature {
     gap: 4rem 2rem;
-
-  }
+    margin: 12rem 0;
+}
+.feature:first-of-type{
+    margin-top: 6rem;
+    
+}
   
 
   .feature__heading {
@@ -696,10 +701,13 @@ a{
   .feature__image {
     width: 100%;
   }
+.feature__paragraph{
+    margin-bottom: 2rem;
+}
   
   @media screen and (min-width: 768px) {
-    .feature:nth-of-type(even).feature__content {
+    .feature:nth-of-type(even) .feature__content{
      order: 2;
     }
   }
-  
+   
